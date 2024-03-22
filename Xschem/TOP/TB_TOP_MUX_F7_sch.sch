@@ -276,31 +276,36 @@ color=4
 node=x1.pre_out}
 T {This is the testbench for testing PLL} 120 -2030 0 0 2 2 { hcenter=true}
 T {These are digital data for Pre_scalar divider
-idea here is to load them from serdes.
 D7-D11
 } -2600 320 0 0 0.5 0.5 {}
 T {These are digital data for feedback divider
-idea here is to load them from serdes.
-D0-D6
-} -2600 90 0 0 0.5 0.5 {}
+D0-D6. (D0 LSB)
+For division of 10, give
+binary of 8.
+This divider gives you N+2 Division.} -2600 90 0 0 0.5 0.5 {}
 T {These are power pins
 } -2350 -170 0 0 0.5 0.5 {}
 T {These are power testing pins for testing individual block
 } -1150 200 0 0 0.5 0.5 {}
-T {These are digital data for USB
-idea here is to load them from serdes.
-D12-D16
-} -1200 -360 0 0 0.5 0.5 {}
+T {These are the data load pins 
+for 4-bit divider which is 
+attached to output of PLL
+to get OUT_CORE with desired
+division ratio. 
+D12-D15. (D12 LSB)
+} -740 -210 0 0 0.5 0.5 {}
 T {These are selection pins for testing. 
 if all selection are 0 
 whole design will be connected in a loop. 
 we can break individual block by 
 selecting 1 on that particular block
 } -2360 -680 0 0 0.5 0.5 {}
-T {These are extra pins of feedback 
-and usb divider that can be used 
-if in case we divison more than 32
-} -2330 -400 0 0 0.5 0.5 {}
+T {These are the data load pins 
+for 4-bit divider which is 
+attached to output of PLL
+to get OUT_USB with
+desired division ratio.(1-16)
+D16-D19. (D16 LSB)} -2210 -420 0 0 0.5 0.5 {}
 N -1900 -80 -1900 -50 {
 lab=GND}
 N -1900 -170 -1900 -140 {
@@ -402,7 +407,7 @@ lab=VSS}
 N 140 -1150 380 -1150 {
 lab=DIV_OUT}
 N 140 -1090 360 -1090 {
-lab=OUT1}
+lab=OUT_CORE}
 N -190 -1250 -160 -1250 {
 lab=DN_INPUT}
 N -260 -1150 -160 -1150 {
@@ -487,10 +492,6 @@ N -1090 -160 -1090 -130 {
 lab=D15}
 N -1090 -70 -1090 -40 {
 lab=GND}
-N -1160 -160 -1160 -130 {
-lab=D16}
-N -1160 -70 -1160 -40 {
-lab=GND}
 N -20 -1350 -20 -1300 {
 lab=VDD_TEST}
 N -80 -1350 -20 -1350 {
@@ -533,30 +534,12 @@ N -300 -650 -300 -640 {
 lab=DIV_OUT2}
 N -10 -520 -10 -500 {
 lab=VSS}
-N -200 -570 -160 -570 {
-lab=D16G}
 N -200 -590 -160 -590 {
-lab=D17G}
+lab=D19}
 N -200 -610 -160 -610 {
-lab=D26G}
+lab=D18}
 N -210 -630 -160 -630 {
-lab=D27G}
-N -1360 -310 -1360 -280 {
-lab=GND}
-N -1360 -400 -1360 -370 {
-lab=D26G}
-N -1690 -320 -1690 -290 {
-lab=GND}
-N -1690 -410 -1690 -380 {
-lab=D27G}
-N -1570 -310 -1570 -280 {
-lab=GND}
-N -1570 -400 -1570 -370 {
-lab=D17G}
-N -1460 -310 -1460 -280 {
-lab=GND}
-N -1460 -400 -1460 -370 {
-lab=D16G}
+lab=D18}
 N -240 -1170 -160 -1170 {
 lab=ITAIL}
 N -10 -540 -10 -520 {
@@ -565,6 +548,24 @@ N -0 -1360 10 -1360 {
 lab=VDD}
 N 10 -1360 10 -1300 {
 lab=VDD}
+N 140 -1070 360 -1070 {
+lab=OUT_USB}
+N -1720 -310 -1720 -280 {
+lab=GND}
+N -1720 -400 -1720 -370 {
+lab=D19}
+N -1620 -310 -1620 -280 {
+lab=GND}
+N -1620 -400 -1620 -370 {
+lab=D18}
+N -1530 -310 -1530 -280 {
+lab=GND}
+N -1530 -400 -1530 -370 {
+lab=D17}
+N -1450 -310 -1450 -280 {
+lab=GND}
+N -1450 -400 -1450 -370 {
+lab=D16}
 C {devices/code_shown.sym} -1350 -1520 0 1 {name=COMMANDS only_toplevel=true
 value="
 
@@ -701,7 +702,7 @@ value=3.3}
 C {devices/lab_wire.sym} -1290 -510 0 0 {name=p87 sig_type=std_logic lab=VSS
 value=3.3}
 C {devices/lab_wire.sym} 380 -1150 2 0 {name=p2 sig_type=std_logic lab=DIV_OUT}
-C {devices/lab_wire.sym} 360 -1090 2 0 {name=p7 sig_type=std_logic lab=OUT1}
+C {devices/lab_wire.sym} 360 -1090 2 0 {name=p7 sig_type=std_logic lab=OUT_CORE}
 C {devices/lab_wire.sym} -400 -1010 0 0 {name=p10 sig_type=std_logic lab=S7}
 C {devices/lab_wire.sym} -460 -990 0 0 {name=p11 sig_type=std_logic lab=D0}
 C {devices/lab_wire.sym} -480 -970 0 0 {name=p12 sig_type=std_logic lab=D1}
@@ -731,13 +732,11 @@ C {devices/lab_wire.sym} -1840 100 0 1 {name=p100 sig_type=std_logic lab=D5}
 C {devices/lab_wire.sym} -1940 110 0 1 {name=p102 sig_type=std_logic lab=D6}
 C {devices/vsource.sym} -870 -100 0 1 {name=V29 value=0}
 C {devices/lab_wire.sym} -870 -150 0 1 {name=p114 sig_type=std_logic lab=D12}
-C {devices/vsource.sym} -950 -100 0 1 {name=V30 value=0}
+C {devices/vsource.sym} -950 -100 0 1 {name=V30 value=1.8}
 C {devices/lab_wire.sym} -950 -150 0 1 {name=p116 sig_type=std_logic lab=D13}
 C {devices/vsource.sym} -1020 -100 0 1 {name=V31 value=0}
 C {devices/lab_wire.sym} -1020 -150 0 1 {name=p118 sig_type=std_logic lab=D14}
 C {devices/lab_wire.sym} -1090 -150 0 1 {name=p120 sig_type=std_logic lab=D15}
-C {devices/vsource.sym} -1160 -100 0 1 {name=V33 value=0}
-C {devices/lab_wire.sym} -1160 -150 0 1 {name=p122 sig_type=std_logic lab=D16}
 C {devices/lab_wire.sym} -80 -1350 0 0 {name=p23 sig_type=std_logic lab=VDD_TEST}
 C {devices/vsource.sym} -1210 -560 0 0 {name=V2 value=0}
 C {devices/lab_wire.sym} -1210 -610 0 0 {name=p4 sig_type=std_logic lab=S7
@@ -759,22 +758,9 @@ C {devices/lab_wire.sym} -1130 460 0 0 {name=p98 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} -1130 360 0 0 {name=p99 sig_type=std_logic lab=DIV_OUT2}
 C {devices/lab_wire.sym} -300 -640 3 0 {name=p104 sig_type=std_logic lab=DIV_OUT2}
 C {devices/lab_wire.sym} -10 -500 0 0 {name=p66 sig_type=std_logic lab=VSS}
-C {devices/lab_wire.sym} -210 -630 0 0 {name=p105 sig_type=std_logic lab=D27G}
-C {devices/lab_wire.sym} -200 -610 0 0 {name=p106 sig_type=std_logic lab=D26G}
-C {devices/lab_wire.sym} -200 -590 0 0 {name=p107 sig_type=std_logic lab=D17G}
-C {devices/lab_wire.sym} -200 -570 0 0 {name=p108 sig_type=std_logic lab=D16G}
-C {devices/vsource.sym} -1360 -340 0 0 {name=V25 value=0}
-C {devices/gnd.sym} -1360 -280 0 0 {name=l2 lab=GND}
-C {devices/vsource.sym} -1690 -350 0 0 {name=V26 value=0}
-C {devices/gnd.sym} -1690 -290 0 0 {name=l3 lab=GND}
-C {devices/vsource.sym} -1570 -340 0 0 {name=V27 value=0}
-C {devices/gnd.sym} -1570 -280 0 0 {name=l4 lab=GND}
-C {devices/gnd.sym} -1460 -280 0 0 {name=l5 lab=GND}
-C {devices/lab_wire.sym} -1360 -400 0 0 {name=p109 sig_type=std_logic lab=D26G}
-C {devices/lab_wire.sym} -1690 -410 0 0 {name=p110 sig_type=std_logic lab=D27G}
-C {devices/lab_wire.sym} -1570 -400 0 0 {name=p111 sig_type=std_logic lab=D17G}
-C {devices/lab_wire.sym} -1460 -400 0 0 {name=p112 sig_type=std_logic lab=D16G}
-C {devices/vsource.sym} -1460 -340 0 0 {name=V28 value=0}
+C {devices/lab_wire.sym} -210 -630 0 0 {name=p105 sig_type=std_logic lab=D18}
+C {devices/lab_wire.sym} -200 -610 0 0 {name=p106 sig_type=std_logic lab=D18}
+C {devices/lab_wire.sym} -200 -590 0 0 {name=p107 sig_type=std_logic lab=D19}
 C {PLL_TOP7.sym} -10 -920 0 0 {name=x1}
 C {devices/code.sym} -1010 -1340 0 0 {name=TT_MODELS
 only_toplevel=true
@@ -788,7 +774,7 @@ spice_ignore=false}
 C {devices/vsource.sym} -1700 150 0 1 {name=V20 value=1.8}
 C {devices/vsource.sym} -1560 150 0 1 {name=V18 value=0}
 C {devices/vsource.sym} -1840 150 0 1 {name=V22 value=0}
-C {devices/vsource.sym} -1090 -100 0 1 {name=V32 value=1.8}
+C {devices/vsource.sym} -1090 -100 0 1 {name=V32 value=0}
 C {devices/vsource.sym} -1820 -100 0 1 {name=V3 value=1.8}
 C {devices/vsource.sym} -1710 -110 0 1 {name=V15 value=1.8}
 C {devices/vsource.sym} -1870 360 0 1 {name=V36 value=1.8}
@@ -804,7 +790,6 @@ C {devices/gnd.sym} -1700 210 0 0 {name=l14 lab=GND}
 C {devices/gnd.sym} -1630 210 0 0 {name=l15 lab=GND}
 C {devices/gnd.sym} -1560 210 0 0 {name=l16 lab=GND}
 C {devices/gnd.sym} -1480 210 0 0 {name=l17 lab=GND}
-C {devices/gnd.sym} -1160 -40 0 0 {name=l18 lab=GND}
 C {devices/gnd.sym} -1090 -40 0 0 {name=l19 lab=GND}
 C {devices/gnd.sym} -1020 -40 0 0 {name=l20 lab=GND}
 C {devices/gnd.sym} -950 -40 0 0 {name=l21 lab=GND}
@@ -822,3 +807,17 @@ C {devices/vsource.sym} -1660 360 0 1 {name=V34 value=0}
 C {devices/vsource.sym} -1770 150 0 1 {name=V21 value=1.8}
 C {devices/vsource.sym} -1940 160 0 1 {name=V23 value=1.8}
 C {devices/title.sym} -1160 870 0 0 {name=l24 author="ATIF|AZEEM|SALEH|ROHAIL"}
+C {devices/lab_wire.sym} 360 -1070 2 0 {name=p30 sig_type=std_logic lab=OUT_USB}
+C {devices/vsource.sym} -1720 -340 0 0 {name=V38 value=0}
+C {devices/gnd.sym} -1720 -280 0 0 {name=l25 lab=GND}
+C {devices/lab_wire.sym} -1720 -400 0 0 {name=p35 sig_type=std_logic lab=D19}
+C {devices/vsource.sym} -1620 -340 0 0 {name=V39 value=0}
+C {devices/gnd.sym} -1620 -280 0 0 {name=l26 lab=GND}
+C {devices/vsource.sym} -1530 -340 0 0 {name=V40 value=0}
+C {devices/gnd.sym} -1530 -280 0 0 {name=l27 lab=GND}
+C {devices/gnd.sym} -1450 -280 0 0 {name=l28 lab=GND}
+C {devices/lab_wire.sym} -1620 -400 0 0 {name=p58 sig_type=std_logic lab=D18}
+C {devices/lab_wire.sym} -1530 -400 0 0 {name=p70 sig_type=std_logic lab=D17}
+C {devices/lab_wire.sym} -1450 -400 0 0 {name=p72 sig_type=std_logic lab=D16
+}
+C {devices/vsource.sym} -1450 -340 0 0 {name=V41 value=0}
