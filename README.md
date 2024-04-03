@@ -1,4 +1,4 @@
-# Sky130_ef_ip__Programmable_PLL
+# Sky130_AA_ip__Programmable_PLL
 Chipaloza Challange A Low Phase Noise Programmable Differential Clock Generator
 
 Schematic files are in Xschem folder.
