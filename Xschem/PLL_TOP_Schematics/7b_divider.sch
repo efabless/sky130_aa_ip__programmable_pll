@@ -386,7 +386,7 @@ C {devices/lab_wire.sym} 1910 -1130 0 0 {name=p62 sig_type=std_logic lab=Q7}
 C {OR.sym} 2430 -1110 0 0 {name=x16}
 C {devices/lab_wire.sym} 2440 -1060 1 0 {name=p84 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2450 -1160 3 0 {name=p85 sig_type=std_logic lab=VSS}
-C {div_by_2.sym} 2870 -1090 0 0 {name=x17}
+C {div_by_2.sym} 2760 -950 0 0 {name=x17}
 C {devices/lab_wire.sym} 2780 -1180 0 0 {name=p86 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2780 -1020 0 0 {name=p87 sig_type=std_logic lab=VSS}
 C {7b_counter_new.sym} 2030 -1510 0 0 {name=x1}
@@ -415,7 +415,7 @@ C {OR.sym} 2410 -700 0 0 {name=x30}
 C {devices/lab_wire.sym} 2230 -700 0 0 {name=p88 sig_type=std_logic lab=P1}
 C {devices/lab_wire.sym} 2420 -650 1 0 {name=p126 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2720 -610 0 0 {name=p143 sig_type=std_logic lab=VSS}
-C {div_by_2.sym} 2810 -680 0 0 {name=x31}
+C {div_by_2.sym} 2700 -540 0 0 {name=x31}
 C {devices/lab_wire.sym} 2720 -770 0 0 {name=p144 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2430 -750 2 0 {name=p145 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 2230 -720 0 0 {name=p146 sig_type=std_logic lab=P0}
