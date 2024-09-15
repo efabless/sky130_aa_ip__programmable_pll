@@ -1183,7 +1183,9 @@ XPFD_UP_1 PFD_UP_1/PFD_INV_0/OUT PFD_UP_0/PFD_INV_0/OUT VDD VSS UP PFD_UP_0/PFD_
 + FIN PFD_UP_1/PFD_INV_0/IN PFD_UP
 .ends
 
-.subckt sky130_aa_ip__programmable_pll
+.subckt sky130_aa_ip__programmable_pll S6 UP_INPUT DN_INPUT S2 S3 UP_OUT DN_OUT ITAIL
++ S4 VCTRL_IN LF_OFFCHIP S5 OUT_CORE OUT_USB D12 D13 D14 D15 F_IN D0 D1 D2 D3 D4 D5
++ D6 D7 D8 D9 D10 D16 D17 D18 D19 OUTB OUT PRE_SCALAR S1 S7 DIV_OUT VDD VSS
 Xdivider_top_0 D5 D4 D3 D6 D2 divider_top_0/OUT1 D1 D0 divider_top_0/CLK VDD VSS divider_top
 XTapered_Buffer_mag_7 OUT_USB VDD VSS divider_top_3/OUT1 Tapered_Buffer_mag
 Xdivider_top_1 VSS VSS D15 VSS D14 divider_top_1/OUT1 D13 D12 OUT VDD VSS divider_top

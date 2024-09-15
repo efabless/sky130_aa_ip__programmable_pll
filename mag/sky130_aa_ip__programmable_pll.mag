@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1726361494
+timestamp 1726362604
 << pwell >>
 rect -4222 1453 -4082 1548
 rect -3591 1428 -3506 1523
@@ -2350,45 +2350,87 @@ transform 1 0 33690 0 1 -975
 box -8117 -475 13984 4754
 << labels >>
 flabel locali s -21980 -628 -21980 -628 0 FreeSans 2000 0 0 0 S6
+port 1 nsew
 flabel locali s -26239 -2019 -26239 -2019 0 FreeSans 2000 0 0 0 UP_INPUT
+port 2 nsew
 flabel locali s -26267 -2271 -26267 -2271 0 FreeSans 2000 0 0 0 DN_INPUT
+port 3 nsew
 flabel locali s -26048 -2492 -26048 -2492 0 FreeSans 2000 0 0 0 S2
+port 4 nsew
 flabel locali s -26089 -2778 -26089 -2778 0 FreeSans 2000 0 0 0 S3
+port 5 nsew
 flabel locali s -25937 -3111 -25937 -3111 0 FreeSans 2000 0 0 0 UP_OUT
+port 6 nsew
 flabel locali s -26013 -3482 -26013 -3482 0 FreeSans 2000 0 0 0 DN_OUT
+port 7 nsew
 flabel locali s -26050 -4594 -26050 -4594 0 FreeSans 2000 0 0 0 ITAIL
+port 8 nsew
 flabel locali s -26022 -5307 -26022 -5307 0 FreeSans 2000 0 0 0 S4
+port 9 nsew
 flabel locali s -26146 -6015 -26146 -6015 0 FreeSans 2000 0 0 0 VCTRL_IN
+port 10 nsew
 flabel locali s -26433 -6567 -26433 -6567 0 FreeSans 2000 0 0 0 LF_OFFCHIP
+port 11 nsew
 flabel locali s -26457 -7358 -26457 -7358 0 FreeSans 2000 0 0 0 S5
+port 12 nsew
 flabel locali s -32043 -33050 -32043 -33050 0 FreeSans 2000 0 0 0 OUT_CORE
+port 13 nsew
 flabel locali s -32436 -50788 -32436 -50788 0 FreeSans 2000 0 0 0 OUT_USB
+port 14 nsew
 flabel locali s -32358 -44578 -32358 -44578 0 FreeSans 2000 0 0 0 D12
+port 15 nsew
 flabel locali s -32366 -44780 -32366 -44780 0 FreeSans 2000 0 0 0 D13
+port 16 nsew
 flabel locali s -32390 -45015 -32390 -45015 0 FreeSans 2000 0 0 0 D14
+port 17 nsew
 flabel locali s -32390 -45265 -32390 -45265 0 FreeSans 2000 0 0 0 D15
+port 18 nsew
 flabel locali s -22154 405 -22154 405 0 FreeSans 2000 0 0 0 F_IN
+port 19 nsew
 flabel locali s -32479 -27992 -32479 -27992 0 FreeSans 2000 0 0 0 D0
+port 20 nsew
 flabel locali s -32448 -28196 -32448 -28196 0 FreeSans 2000 0 0 0 D1
+port 21 nsew
 flabel locali s -32417 -28414 -32417 -28414 0 FreeSans 2000 0 0 0 D2
+port 22 nsew
 flabel locali s -32504 -28656 -32504 -28656 0 FreeSans 2000 0 0 0 D3
+port 23 nsew
 flabel locali s -32907 -28960 -32907 -28960 0 FreeSans 2000 0 0 0 D4
+port 24 nsew
 flabel locali s -32684 -29264 -32684 -29264 0 FreeSans 2000 0 0 0 D5
+port 25 nsew
 flabel locali s -32808 -29624 -32808 -29624 0 FreeSans 2000 0 0 0 D6
+port 26 nsew
 flabel locali s -20443 4401 -20443 4401 0 FreeSans 2000 0 0 0 D7
+port 27 nsew
 flabel locali s -19883 5428 -19883 5428 0 FreeSans 2000 0 0 0 D8
+port 28 nsew
 flabel locali s -19736 7109 -19736 7109 0 FreeSans 2000 0 0 0 D9
+port 29 nsew
 flabel locali s -18882 7776 -18882 7776 0 FreeSans 2000 0 0 0 D10
+port 30 nsew
 flabel locali s -32966 -62696 -32966 -62696 0 FreeSans 2000 0 0 0 D16
+port 31 nsew
 flabel locali s -33364 -62901 -33364 -62901 0 FreeSans 2000 0 0 0 D17
+port 32 nsew
 flabel locali s -32912 -63121 -32912 -63121 0 FreeSans 2000 0 0 0 D18
+port 33 nsew
 flabel locali s -32843 -63367 -32843 -63367 0 FreeSans 2000 0 0 0 D19
+port 34 nsew
 flabel locali s -33957 -9382 -33957 -9382 0 FreeSans 2000 0 0 0 OUTB
+port 35 nsew
 flabel locali s -34119 -12958 -34119 -12958 0 FreeSans 2000 0 0 0 OUT
+port 36 nsew
 flabel locali s -22650 1410 -22650 1410 0 FreeSans 2000 0 0 0 PRE_SCALAR
+port 37 nsew
 flabel locali s -22938 181 -22938 181 0 FreeSans 2000 0 0 0 S1
+port 38 nsew
 flabel locali s -34376 -14319 -34376 -14319 0 FreeSans 2000 0 0 0 S7
+port 39 nsew
 flabel locali s -34232 -15974 -34232 -15974 0 FreeSans 2000 0 0 0 DIV_OUT
+port 40 nsew
 flabel locali s 97170 -15073 97170 -15073 0 FreeSans 20000 0 0 0 VDD
+port 41 nsew
 flabel locali s 79409 -6079 79409 -6079 0 FreeSans 20000 0 0 0 VSS
+port 42 nsew
 << end >>

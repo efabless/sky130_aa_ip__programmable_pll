@@ -6,7 +6,7 @@
 *+ S7:I D17:I D18:I D19:I OUT_CORE:O
 x18 VDD LD2 VSS Q21 VSS Q22 VSS D10 Q23 Q24 D9 D8 Q25 D7 Q26 Q27 F_IN VSS pre_out P22 7b_divider
 x17 VDD LD0 D6 Q01 D5 Q02 D4 D3 Q03 Q04 D2 D1 Q05 D0 Q06 Q07 IN_DIV VSS OUT01 P02 7b_divider
-x28 VDD LD1 GND Q11 GND Q12 GND D15 Q13 Q14 D14 D13 Q15 D12 Q16 Q17 OUT VSS OUT11 P12 7b_divider
+x28 VDD LD1 VSS Q11 VSS Q12 VSS D15 Q13 Q14 D14 D13 Q15 D12 Q16 Q17 OUT VSS OUT11 P12 7b_divider
 x13 VSS VDD PRE_SCALAR pre_out Tappered-Buffer_1
 x14 VSS VDD UP_OUT UP Tappered-Buffer_1
 x15 VSS VDD OUT OUTA1 Tappered-Buffer_1
@@ -25,12 +25,12 @@ x8 VDD ITAIL_SINK ITAIL_SRC MUFTA2 DN UP VSS CP
 x7 VDD VSS VCTRL_OBV VDD OUTA1 OUTA2 VCO_1
 x24 VDD VSS OUT_D F_IN S7 IN_DIV A_MUX
 x1 VDD VSS FDIV FIN UP1 DN1 PFD
-x9 VDD LD1u GND Q11u GND Q12u GND D19 Q13u Q14u D18 D17 Q15u D16 Q16u Q17u OUTB VSS net1 p2u 7b_divider
+x9 VDD LD1u VSS Q11u VSS Q12u VSS D19 Q13u Q14u D18 D17 Q15u D16 Q16u Q17u OUTB VSS net1 p2u 7b_divider
 x10 VSS VDD OUT_USB net1 Tappered-Buffer_1
 x11 VDD ITAIL ITAIL_SRC ITAIL_SINK VSS Current_Mirror_Top_s
-XC3 net2 GND sky130_fd_pr__cap_mim_m3_1 W=30 L=30 m=44
-XC4 MUFTA GND sky130_fd_pr__cap_mim_m3_1 W=10 L=10 m=50
-XR1 net2 MUFTA GND sky130_fd_pr__res_high_po_0p69 L=110 mult=1 m=1
+XC3 net2 VSS sky130_fd_pr__cap_mim_m3_1 W=30 L=30 m=44
+XC4 MUFTA VSS sky130_fd_pr__cap_mim_m3_1 W=10 L=10 m=50
+XR1 net2 MUFTA VSS sky130_fd_pr__res_high_po_0p69 L=110 mult=1 m=1
 .ends
 
 * expanding   symbol:  7b_divider.sym # of pins=20
@@ -561,5 +561,4 @@ XM2 VOUT A net1 VSS sky130_fd_pr__nfet_01v8 L=0.2 W=1 nf=1 m=1
 XM3 VOUT B VDD VDD sky130_fd_pr__pfet_01v8 L=0.2 W=4 nf=1 m=1
 .ends
 
-.GLOBAL GND
 .end

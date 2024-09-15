@@ -348,7 +348,7 @@ Circuit sky130_aa_ip__programmable_pll contains 10188 device instances.
   Class: sky130_fd_pr__pfet_01v8 instances: 5618
   Class: sky130_fd_pr__res_high_po_0p69 instances:   1
   Class: inverter_1            instances:  96
-Circuit contains 2264 nets.
+Circuit contains 2263 nets.
 Contents of circuit 2:  Circuit: 'sky130_aa_ip__programmable_pll'
 Circuit sky130_aa_ip__programmable_pll contains 3715 device instances.
   Class: sky130_fd_pr__nfet_01v8 instances: 1535
@@ -359,7 +359,7 @@ Circuit sky130_aa_ip__programmable_pll contains 3715 device instances.
   Class: sky130_fd_pr__pfet_01v8 instances: 1500
   Class: sky130_fd_pr__res_high_po_0p69 instances:   1
   Class: inverter_1            instances: 320
-Circuit contains 2272 nets.
+Circuit contains 2271 nets.
 
 Flattened mismatched instances and attempting compare again.
 
@@ -371,7 +371,7 @@ Circuit sky130_aa_ip__programmable_pll contains 10499 device instances.
   Class: DelayCell_1           instances:   2
   Class: sky130_fd_pr__pfet_01v8 instances: 5929
   Class: sky130_fd_pr__res_high_po_0p69 instances:   1
-Circuit contains 2264 nets.
+Circuit contains 2263 nets.
 Contents of circuit 2:  Circuit: 'sky130_aa_ip__programmable_pll'
 Circuit sky130_aa_ip__programmable_pll contains 4389 device instances.
   Class: sky130_fd_pr__nfet_01v8 instances: 2209
@@ -380,7 +380,7 @@ Circuit sky130_aa_ip__programmable_pll contains 4389 device instances.
   Class: DelayCell_1           instances:   2
   Class: sky130_fd_pr__pfet_01v8 instances: 2174
   Class: sky130_fd_pr__res_high_po_0p69 instances:   1
-Circuit contains 2272 nets.
+Circuit contains 2271 nets.
 
 Circuit was modified by parallel/series device merging.
 New circuit summary:
@@ -393,7 +393,7 @@ Circuit sky130_aa_ip__programmable_pll contains 4360 device instances.
   Class: DelayCell_1           instances:   2
   Class: sky130_fd_pr__pfet_01v8 instances: 2162
   Class: sky130_fd_pr__res_high_po_0p69 instances:   1
-Circuit contains 2264 nets.
+Circuit contains 2263 nets.
 Contents of circuit 2:  Circuit: 'sky130_aa_ip__programmable_pll'
 Circuit sky130_aa_ip__programmable_pll contains 4378 device instances.
   Class: sky130_fd_pr__nfet_01v8 instances: 2201
@@ -402,15 +402,14 @@ Circuit sky130_aa_ip__programmable_pll contains 4378 device instances.
   Class: DelayCell_1           instances:   2
   Class: sky130_fd_pr__pfet_01v8 instances: 2171
   Class: sky130_fd_pr__res_high_po_0p69 instances:   1
-Circuit contains 2272 nets.
+Circuit contains 2271 nets.
 
 Circuit 1 contains 4360 devices, Circuit 2 contains 4378 devices. *** MISMATCH ***
-Circuit 1 contains 2263 nets,    Circuit 2 contains 2272 nets. *** MISMATCH ***
+Circuit 1 contains 2263 nets,    Circuit 2 contains 2271 nets. *** MISMATCH ***
 
 
 Final result: 
-Top level cell failed pin matching.
-
+Netlists do not match.
 
 The following cells had property errors:
  inverter_1

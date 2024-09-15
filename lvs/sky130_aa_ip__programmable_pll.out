@@ -1,10 +1,32 @@
 
 Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
-Equate elements:  no current cell.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
 Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
 
 Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
-Equate elements:  no current cell.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
 Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_ES6JQB in circuit inverter (0)(5 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_S4GQ7J in circuit inverter (0)(5 instances)
@@ -60,11 +82,30 @@ Cell pin lists are equivalent.
 Device classes inverter_1 and inverter_1 are equivalent.
 
 Circuit 1 cell sky130_fd_pr__res_high_po_0p69 and Circuit 2 cell sky130_fd_pr__res_high_po_0p69 are black boxes.
-Equate elements:  no current cell.
+Warning: Equate pins:  cell sky130_fd_pr__res_high_po_0p69 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__res_high_po_0p69 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__res_high_po_0p69  |Circuit 2: sky130_fd_pr__res_high_po_0p69  
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
 Device classes sky130_fd_pr__res_high_po_0p69 and sky130_fd_pr__res_high_po_0p69 are equivalent.
 
 Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
-Equate elements:  no current cell.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__cap_mim_m3_1      |Circuit 2: sky130_fd_pr__cap_mim_m3_1      
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
 Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_A6LSUL in circuit PFD_INV (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_54DJGB in circuit PFD_INV (0)(1 instance)
@@ -389,7 +430,7 @@ sky130_fd_pr__res_high_po_0p69 (1)         |sky130_fd_pr__res_high_po_0p69 (1)
 sky130_fd_pr__cap_mim_m3_1 (245->2)        |sky130_fd_pr__cap_mim_m3_1 (94->2)         
 PFD (1)                                    |PFD (1)                                    
 Number of devices: 4360 **Mismatch**       |Number of devices: 4378 **Mismatch**       
-Number of nets: 2263 **Mismatch**          |Number of nets: 2272 **Mismatch**          
+Number of nets: 2263 **Mismatch**          |Number of nets: 2271 **Mismatch**          
 ---------------------------------------------------------------------------------------
 NET mismatches: Class fragments follow (with fanout counts):
 Circuit 1: sky130_aa_ip__programmable_pll  |Circuit 2: sky130_aa_ip__programmable_pll  
@@ -440,13 +481,13 @@ Net: VDD                                   |Net: VDD
 Net: VSS                                   |Net: VSS                                   
   sky130_fd_pr__nfet_01v8/(1|3) = 1624     |  sky130_fd_pr__nfet_01v8/(1|3) = 1636     
   sky130_fd_pr__nfet_01v8/4 = 2189         |  sky130_fd_pr__nfet_01v8/4 = 2200         
-  sky130_fd_pr__nfet_01v8/2 = 70           |  sky130_fd_pr__nfet_01v8/2 = 24           
-  sky130_fd_pr__pfet_01v8/2 = 69           |  sky130_fd_pr__pfet_01v8/2 = 23           
+  sky130_fd_pr__nfet_01v8/2 = 70           |  sky130_fd_pr__nfet_01v8/2 = 70           
+  sky130_fd_pr__pfet_01v8/2 = 69           |  sky130_fd_pr__pfet_01v8/2 = 69           
   sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
   DelayCell_1/VSS = 2                      |  DelayCell_1/VSS = 2                      
   PFD/VSS = 1                              |  PFD/VSS = 1                              
-  sky130_fd_pr__cap_mim_m3_1/2 = 2         |                                           
-  sky130_fd_pr__res_high_po_0p69/3 = 1     |                                           
+  sky130_fd_pr__cap_mim_m3_1/2 = 2         |  sky130_fd_pr__cap_mim_m3_1/2 = 2         
+  sky130_fd_pr__res_high_po_0p69/3 = 1     |  sky130_fd_pr__res_high_po_0p69/3 = 1     
                                            |                                           
 Net: ANALOG_MUX_MAG_3/IN_1                 |Net: LF_OFFCHIP                            
   sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
@@ -580,12 +621,6 @@ Net: CP_0/VCTRL                            |Net: 7b_divider:18/MUX:32/AND:2/net1
 (no matching net)                          |Net: VCTRL_IN                              
                                            |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
                                            |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-                                           |                                           
-(no matching net)                          |Net: GND                                   
-                                           |  sky130_fd_pr__nfet_01v8/2 = 46           
-                                           |  sky130_fd_pr__pfet_01v8/2 = 46           
-                                           |  sky130_fd_pr__cap_mim_m3_1/2 = 2         
-                                           |  sky130_fd_pr__res_high_po_0p69/3 = 1     
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
@@ -2013,64 +2048,64 @@ Circuit 1: sky130_aa_ip__programmable_pll  |Circuit 2: sky130_aa_ip__programmabl
 
 ---------------------------------------------------------------------------------------
 Instance: Tapered_Buffer_mag_7//sky130_fd_ |Instance: 7b_divider:18/NOR:7/sky130_fd_pr 
-  (1,3) = (3959,3959)                      |  (1,3) = (3887,5)                         
-  2 = 3959                                 |  2 = 3887                                 
-  4 = 3959                                 |  4 = 3887                                 
+  (1,3) = (3959,3959)                      |  (1,3) = (3982,5)                         
+  2 = 3959                                 |  2 = 3982                                 
+  4 = 3959                                 |  4 = 3982                                 
                                            |                                           
 Instance: divider_top_2//NOR_MAGIC_1//sky1 |Instance: A_MUX:6/TR_Gate:1/sky130_fd_pr__ 
-  (1,3) = (3959,5)                         |  (1,3) = (3887,3)                         
+  (1,3) = (3959,5)                         |  (1,3) = (3982,3)                         
   2 = 3959                                 |  2 = 5                                    
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
                                            |                                           
 Instance: VCO_0//Divide_By_2_magic_0//inve |Instance: A_MUX:6/TR_Gate:1/sky130_fd_pr__ 
   (1,3) = (3959,6)                         |  (1,3) = (6,2)                            
   2 = 6                                    |  2 = 5                                    
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
                                            |                                           
 Instance: CP_0//sky130_fd_pr__nfet_01v8_N7 |Instance: A_MUX:12/TR_Gate:1/sky130_fd_pr_ 
-  (1,3) = (3959,4)                         |  (1,3) = (3887,3)                         
+  (1,3) = (3959,4)                         |  (1,3) = (3982,3)                         
   2 = 4                                    |  2 = 5                                    
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
                                            |                                           
 Instance: CP_0//sky130_fd_pr__nfet_01v8_N7 |Instance: CP:8/sky130_fd_pr__nfet_01v8:M5  
-  (1,3) = (10,2)                           |  (1,3) = (3887,4)                         
+  (1,3) = (10,2)                           |  (1,3) = (3982,4)                         
   2 = 4                                    |  2 = 4                                    
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
                                            |                                           
 Instance: VCO_0//Divide_By_2_magic_0//inve |Instance: VCO_1:7/INV_1:3/sky130_fd_pr__nf 
-  (1,3) = (3959,4)                         |  (1,3) = (3887,3887)                      
-  2 = 8                                    |  2 = 3887                                 
-  4 = 3959                                 |  4 = 3887                                 
+  (1,3) = (3959,4)                         |  (1,3) = (3982,3982)                      
+  2 = 8                                    |  2 = 3982                                 
+  4 = 3959                                 |  4 = 3982                                 
                                            |                                           
 Instance: VCO_0//Divide_By_2_magic_0//TG_M |Instance: VCO_1:7/div_by_2:9/inverter:2/sk 
-  (1,3) = (8,6)                            |  (1,3) = (3887,6)                         
+  (1,3) = (8,6)                            |  (1,3) = (3982,6)                         
   2 = 8                                    |  2 = 6                                    
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
                                            |                                           
 Instance: VCO_0//Divide_By_2_magic_0//inve |Instance: Current_Mirror_Top_s:11/sky130_f 
-  (1,3) = (3959,8)                         |  (1,3) = (3887,3)                         
+  (1,3) = (3959,8)                         |  (1,3) = (3982,3)                         
   2 = 8                                    |  2 = 3                                    
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
                                            |                                           
 Instance: VCO_0//Divide_By_2_magic_0//TG_M |Instance: VCO_1:7/div_by_2:9/tg:1/sky130_f 
   (1,3) = (8,4)                            |  (1,3) = (6,6)                            
   2 = 8                                    |  2 = 8                                    
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
                                            |                                           
 Instance: VCO_0//Divide_By_2_magic_0//inve |Instance: VCO_1:7/div_by_2:9/tg:5/sky130_f 
   (1,3) = (3959,8)                         |  (1,3) = (6,6)                            
   2 = 11                                   |  2 = 8                                    
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
                                            |                                           
 Instance: VCO_0//Divide_By_2_magic_0//TG_M |Instance: VCO_1:7/div_by_2:9/inverter:7/sk 
-  (1,3) = (8,6)                            |  (1,3) = (3887,6)                         
+  (1,3) = (8,6)                            |  (1,3) = (3982,6)                         
   2 = 11                                   |  2 = 8                                    
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
                                            |                                           
 Instance: VCO_0//Divide_By_2_magic_0//TG_M |Instance: A_MUX:12/TR_Gate:1/sky130_fd_pr_ 
   (1,3) = (3959,3)                         |  (1,3) = (8,2)                            
   2 = 11                                   |  2 = 5                                    
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
                                            |                                           
 Instance: VCO_0//Divide_By_2_magic_0//inve |Instance: CP:8/sky130_fd_pr__nfet_01v8:M6  
   (1,3) = (3938,6)                         |  (1,3) = (8,3)                            
@@ -2078,26 +2113,26 @@ Instance: VCO_0//Divide_By_2_magic_0//inve |Instance: CP:8/sky130_fd_pr__nfet_01
   4 = 3938                                 |  4 = 3                                    
                                            |                                           
 Instance: VCO_0//Divide_By_2_magic_0//inve |Instance: VCO_1:7/div_by_2:9/inverter:6/sk 
-  (1,3) = (3938,8)                         |  (1,3) = (3887,8)                         
+  (1,3) = (3938,8)                         |  (1,3) = (3982,8)                         
   2 = 8                                    |  2 = 6                                    
-  4 = 3938                                 |  4 = 3887                                 
+  4 = 3938                                 |  4 = 3982                                 
                                            |                                           
 (no matching instance)                     |Instance: VCO_1:7/div_by_2:9/inverter:9/sk 
-                                           |  (1,3) = (3887,8)                         
+                                           |  (1,3) = (3982,8)                         
                                            |  2 = 11                                   
-                                           |  4 = 3887                                 
+                                           |  4 = 3982                                 
                                            |                                           
                                            |                                           
 (no matching instance)                     |Instance: VCO_1:7/div_by_2:9/tg:4/inverter 
-                                           |  (1,3) = (3887,3)                         
+                                           |  (1,3) = (3982,3)                         
                                            |  2 = 11                                   
-                                           |  4 = 3887                                 
+                                           |  4 = 3982                                 
                                            |                                           
                                            |                                           
 (no matching instance)                     |Instance: VCO_1:7/div_by_2:9/tg:4/sky130_f 
                                            |  (1,3) = (6,6)                            
                                            |  2 = 11                                   
-                                           |  4 = 3887                                 
+                                           |  4 = 3982                                 
                                            |                                           
                                            |                                           
 (no matching instance)                     |Instance: A_MUX:6/TR_Gate:1/sky130_fd_pr__ 
@@ -2266,24 +2301,24 @@ Instance: divider_top_0//AND_1_1//inverter |Instance: 7b_divider:17/AND:15/inver
 Instance: divider_top_0//DFF_MAG_0//TG_MAG |Instance: 7b_divider:18/DFF:8/tg:5/sky130_ 
   (1,3) = (6,4)                            |  (1,3) = (6,4)                            
   2 = 8                                    |  2 = 8                                    
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
                                            |                                           
 Instance: divider_top_2//DFF_MAG_0//TG_MAG |Instance: 7b_divider:17/DFF:8/tg:5/sky130_ 
   (1,3) = (6,4)                            |  (1,3) = (6,4)                            
   2 = 8                                    |  2 = 8                                    
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
 Instance: divider_top_0//divider_magic_0// |Instance: 7b_divider:18/P2_GENERATOR:2/DFF 
   (1,3) = (6,4)                            |  (1,3) = (6,4)                            
   2 = 8                                    |  2 = 8                                    
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
                                            |                                           
 Instance: divider_top_2//divider_magic_0// |Instance: 7b_divider:17/P2_GENERATOR:2/DFF 
   (1,3) = (6,4)                            |  (1,3) = (6,4)                            
   2 = 8                                    |  2 = 8                                    
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
@@ -2314,27 +2349,27 @@ Instance: divider_top_0/x7b_counter_new:7b |(no matching instance)
 
 ---------------------------------------------------------------------------------------
 (no matching instance)                     |Instance: 7b_divider:17/7b_counter_new:1/M 
-                                           |  (1,3) = (3887,5)                         
+                                           |  (1,3) = (3982,5)                         
                                            |  2 = 4                                    
-                                           |  4 = 3887                                 
+                                           |  4 = 3982                                 
                                            |                                           
                                            |                                           
 (no matching instance)                     |Instance: 7b_divider:17/7b_counter_new:1/M 
-                                           |  (1,3) = (3887,5)                         
+                                           |  (1,3) = (3982,5)                         
                                            |  2 = 4                                    
-                                           |  4 = 3887                                 
+                                           |  4 = 3982                                 
                                            |                                           
                                            |                                           
 (no matching instance)                     |Instance: 7b_divider:18/7b_counter_new:1/M 
-                                           |  (1,3) = (3887,5)                         
+                                           |  (1,3) = (3982,5)                         
                                            |  2 = 4                                    
-                                           |  4 = 3887                                 
+                                           |  4 = 3982                                 
                                            |                                           
                                            |                                           
 (no matching instance)                     |Instance: 7b_divider:18/7b_counter_new:1/M 
-                                           |  (1,3) = (3887,5)                         
+                                           |  (1,3) = (3982,5)                         
                                            |  2 = 4                                    
-                                           |  4 = 3887                                 
+                                           |  4 = 3982                                 
                                            |                                           
 ---------------------------------------------------------------------------------------
 
@@ -2342,82 +2377,82 @@ Instance: divider_top_0/x7b_counter_new:7b |(no matching instance)
 Instance: divider_top_0/x7b_counter_new:7b |Instance: 7b_divider:18/7b_counter_new:1/M 
   (1,3) = (6,2)                            |  (1,3) = (6,2)                            
   2 = 6                                    |  2 = 6                                    
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
                                            |                                           
 Instance: divider_top_2/x7b_counter_new:7b |Instance: 7b_divider:17/7b_counter_new:1/M 
   (1,3) = (6,2)                            |  (1,3) = (6,2)                            
   2 = 6                                    |  2 = 6                                    
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
 Instance: divider_top_0//MUX_1_0//AND_1_0/ |Instance: 7b_divider:18/MUX:5/AND:3/NAND_1 
   (1,3) = (5,2)                            |  (1,3) = (5,2)                            
   2 = 6                                    |  2 = 6                                    
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
                                            |                                           
 Instance: divider_top_2//MUX_1_0//AND_1_0/ |Instance: 7b_divider:17/MUX:5/AND:3/NAND_1 
   (1,3) = (5,2)                            |  (1,3) = (5,2)                            
   2 = 6                                    |  2 = 6                                    
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
 Instance: divider_top_2/x7b_counter_new:7b |Instance: 7b_divider:17/7b_counter_new:1/M 
-  (1,3) = (3959,4)                         |  (1,3) = (3887,4)                         
+  (1,3) = (3959,4)                         |  (1,3) = (3982,4)                         
   2 = 5                                    |  2 = 5                                    
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
                                            |                                           
 Instance: divider_top_0/x7b_counter_new:7b |Instance: 7b_divider:18/7b_counter_new:1/M 
-  (1,3) = (3959,4)                         |  (1,3) = (3887,4)                         
+  (1,3) = (3959,4)                         |  (1,3) = (3982,4)                         
   2 = 5                                    |  2 = 5                                    
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
 Instance: divider_top_0/x7b_counter_new:7b |Instance: 7b_divider:18/7b_counter_new:1/M 
-  (1,3) = (3959,5)                         |  (1,3) = (3887,5)                         
+  (1,3) = (3959,5)                         |  (1,3) = (3982,5)                         
   2 = 4                                    |  2 = 4                                    
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
                                            |                                           
 Instance: divider_top_0/x7b_counter_new:7b |Instance: 7b_divider:18/7b_counter_new:1/M 
-  (1,3) = (3959,5)                         |  (1,3) = (3887,5)                         
+  (1,3) = (3959,5)                         |  (1,3) = (3982,5)                         
   2 = 4                                    |  2 = 4                                    
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
                                            |                                           
 Instance: divider_top_2/x7b_counter_new:7b |Instance: 7b_divider:17/7b_counter_new:1/M 
-  (1,3) = (3959,5)                         |  (1,3) = (3887,5)                         
+  (1,3) = (3959,5)                         |  (1,3) = (3982,5)                         
   2 = 4                                    |  2 = 4                                    
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
                                            |                                           
 Instance: divider_top_2/x7b_counter_new:7b |Instance: 7b_divider:17/7b_counter_new:1/M 
-  (1,3) = (3959,5)                         |  (1,3) = (3887,5)                         
+  (1,3) = (3959,5)                         |  (1,3) = (3982,5)                         
   2 = 4                                    |  2 = 4                                    
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
 Instance: divider_top_2/x7b_counter_new:7b |Instance: 7b_divider:17/7b_counter_new:1/M 
-  (1,3) = (3959,2)                         |  (1,3) = (3887,2)                         
+  (1,3) = (3959,2)                         |  (1,3) = (3982,2)                         
   2 = 4                                    |  2 = 4                                    
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
                                            |                                           
 Instance: divider_top_0/x7b_counter_new:7b |Instance: 7b_divider:18/7b_counter_new:1/M 
-  (1,3) = (3959,2)                         |  (1,3) = (3887,2)                         
+  (1,3) = (3959,2)                         |  (1,3) = (3982,2)                         
   2 = 4                                    |  2 = 4                                    
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
 Instance: divider_top_0//AND_1_0//inverter |Instance: 7b_divider:17/AND:14/inverter_1: 
-  (1,3) = (3959,4)                         |  (1,3) = (3887,4)                         
+  (1,3) = (3959,4)                         |  (1,3) = (3982,4)                         
   2 = 5                                    |  2 = 5                                    
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
                                            |                                           
 Instance: divider_top_0//AND_1_1//inverter |Instance: 7b_divider:17/AND:15/inverter_1: 
-  (1,3) = (3959,4)                         |  (1,3) = (3887,4)                         
+  (1,3) = (3959,4)                         |  (1,3) = (3982,4)                         
   2 = 5                                    |  2 = 5                                    
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
@@ -2468,114 +2503,72 @@ Instance: divider_top_0/x7b_counter_new:7b |Instance: 7b_divider:18/7b_counter_n
 
 ---------------------------------------------------------------------------------------
 Instance: divider_top_2/x7b_counter_new:7b |Instance: 7b_divider:17/7b_counter_new:1/M 
-  (1,3) = (3959,14)                        |  (1,3) = (3887,14)                        
+  (1,3) = (3959,14)                        |  (1,3) = (3982,14)                        
   2 = 5                                    |  2 = 5                                    
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
                                            |                                           
 Instance: divider_top_0/x7b_counter_new:7b |Instance: 7b_divider:18/7b_counter_new:1/M 
-  (1,3) = (3959,14)                        |  (1,3) = (3887,14)                        
+  (1,3) = (3959,14)                        |  (1,3) = (3982,14)                        
   2 = 5                                    |  2 = 5                                    
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
 Instance: divider_top_0/x7b_counter_new:7b |Instance: 7b_divider:18/7b_counter_new:1/M 
-  (1,3) = (3959,2)                         |  (1,3) = (3887,2)                         
+  (1,3) = (3959,2)                         |  (1,3) = (3982,2)                         
   2 = 14                                   |  2 = 14                                   
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
                                            |                                           
 Instance: divider_top_0/x7b_counter_new:7b |Instance: 7b_divider:18/7b_counter_new:1/M 
-  (1,3) = (3959,2)                         |  (1,3) = (3887,2)                         
+  (1,3) = (3959,2)                         |  (1,3) = (3982,2)                         
   2 = 14                                   |  2 = 14                                   
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
                                            |                                           
 Instance: divider_top_2/x7b_counter_new:7b |Instance: 7b_divider:17/7b_counter_new:1/M 
-  (1,3) = (3959,2)                         |  (1,3) = (3887,2)                         
+  (1,3) = (3959,2)                         |  (1,3) = (3982,2)                         
   2 = 14                                   |  2 = 14                                   
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
                                            |                                           
 Instance: divider_top_2/x7b_counter_new:7b |Instance: 7b_divider:17/7b_counter_new:1/M 
-  (1,3) = (3959,2)                         |  (1,3) = (3887,2)                         
+  (1,3) = (3959,2)                         |  (1,3) = (3982,2)                         
   2 = 14                                   |  2 = 14                                   
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
 Instance: divider_top_2/x7b_counter_new:7b |Instance: 7b_divider:17/7b_counter_new:1/L 
-  (1,3) = (3959,6)                         |  (1,3) = (3887,6)                         
+  (1,3) = (3959,6)                         |  (1,3) = (3982,6)                         
   2 = 14                                   |  2 = 14                                   
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
                                            |                                           
 Instance: divider_top_0/x7b_counter_new:7b |Instance: 7b_divider:18/7b_counter_new:1/L 
-  (1,3) = (3959,6)                         |  (1,3) = (3887,6)                         
+  (1,3) = (3959,6)                         |  (1,3) = (3982,6)                         
   2 = 14                                   |  2 = 14                                   
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
 Instance: divider_top_2/x7b_counter_new:7b |Instance: 7b_divider:17/7b_counter_new:1/L 
-  (1,3) = (3959,6)                         |  (1,3) = (3887,6)                         
+  (1,3) = (3959,6)                         |  (1,3) = (3982,6)                         
   2 = 14                                   |  2 = 14                                   
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
                                            |                                           
 Instance: divider_top_0/x7b_counter_new:7b |Instance: 7b_divider:18/7b_counter_new:1/L 
-  (1,3) = (3959,6)                         |  (1,3) = (3887,6)                         
+  (1,3) = (3959,6)                         |  (1,3) = (3982,6)                         
   2 = 14                                   |  2 = 14                                   
-  4 = 3959                                 |  4 = 3887                                 
+  4 = 3959                                 |  4 = 3982                                 
 ---------------------------------------------------------------------------------------
 Netlists do not match.
 
 Subcircuit pins:
 Circuit 1: sky130_aa_ip__programmable_pll  |Circuit 2: sky130_aa_ip__programmable_pll  
 -------------------------------------------|-------------------------------------------
-(no matching pin)                          |D12                                        
-(no matching pin)                          |D0                                         
-(no matching pin)                          |VDD                                        
-(no matching pin)                          |UP_INPUT                                   
-(no matching pin)                          |D13                                        
-(no matching pin)                          |D1                                         
-(no matching pin)                          |DN_INPUT                                   
-(no matching pin)                          |VSS                                        
-(no matching pin)                          |D14                                        
-(no matching pin)                          |D2                                         
-(no matching pin)                          |PRE_SCALAR                                 
-(no matching pin)                          |UP_OUT                                     
-(no matching pin)                          |D15                                        
-(no matching pin)                          |D3                                         
-(no matching pin)                          |F_IN                                       
-(no matching pin)                          |DN_OUT                                     
-(no matching pin)                          |D16                                        
-(no matching pin)                          |D4                                         
-(no matching pin)                          |ITAIL                                      
-(no matching pin)                          |DIV_OUT                                    
-(no matching pin)                          |D5                                         
-(no matching pin)                          |S1                                         
-(no matching pin)                          |S6                                         
-(no matching pin)                          |D6                                         
-(no matching pin)                          |VCTRL_IN                                   
-(no matching pin)                          |D7                                         
-(no matching pin)                          |S2                                         
-(no matching pin)                          |D8                                         
-(no matching pin)                          |S3                                         
-(no matching pin)                          |OUT                                        
-(no matching pin)                          |D9                                         
-(no matching pin)                          |OUTB                                       
-(no matching pin)                          |S4                                         
-(no matching pin)                          |LF_OFFCHIP                                 
-(no matching pin)                          |D10                                        
-(no matching pin)                          |S5                                         
-(no matching pin)                          |S7                                         
-(no matching pin)                          |OUT_USB                                    
-(no matching pin)                          |D17                                        
-(no matching pin)                          |OUT_CORE                                   
-(no matching pin)                          |D18                                        
-(no matching pin)                          |D19                                        
-proxyD19                                   |(no matching pin)                          
----------------------------------------------------------------------------------------
-Cell pin lists for sky130_aa_ip__programmable_pll and sky130_aa_ip__programmable_pll altered to match.
+VDD                                        |(no matching pin)                          
+VSS                                        |VCTRL_IN **Mismatch**                      
+Cell pin lists are equivalent.
 Device classes sky130_aa_ip__programmable_pll and sky130_aa_ip__programmable_pll are equivalent.
 
-Final result: Top level cell failed pin matching.
+Final result: Netlists do not match.
 
 The following cells had property errors:
  inverter_1

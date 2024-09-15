@@ -235,8 +235,6 @@ N 1900 30 1900 70 {
 lab=VDD}
 N 1900 350 1900 360 {
 lab=VSS}
-N 1780 130 1800 130 {
-lab=GND}
 N 1740 190 1800 190 {
 lab=D15}
 N 1720 210 1800 210 {
@@ -606,15 +604,15 @@ lab=#net1}
 N -1540 -700 -1540 -680 {
 lab=VSS}
 N 1770 150 1800 150 {
-lab=GND}
+lab=#net2}
 N 1770 170 1800 170 {
-lab=GND}
+lab=#net2}
 N 1410 -1010 1430 -1010 {
-lab=GND}
+lab=VSS}
 N 1420 -990 1430 -990 {
-lab=GND}
+lab=VSS}
 N 1410 -970 1430 -970 {
-lab=GND}
+lab=VSS}
 N 2250 -840 2290 -840 {
 lab=OUT_USB}
 N 70 -700 70 -670 {
@@ -628,9 +626,9 @@ lab=VDD}
 N 130 -1020 130 -1000 {
 lab=ITAIL}
 N 340 50 450 50 {
-lab=GND}
+lab=VSS}
 N 520 30 520 50 {
-lab=GND}
+lab=VSS}
 N 340 -100 340 -10 {
 lab=MUFTA}
 N 340 -100 450 -100 {
@@ -642,19 +640,29 @@ lab=MUFTA}
 N 350 -120 350 -100 {
 lab=MUFTA}
 N 480 -60 500 -60 {
-lab=GND}
+lab=VSS}
 N 480 -60 480 50 {
-lab=GND}
+lab=VSS}
 N 450 50 520 50 {
-lab=GND}
+lab=VSS}
 N 450 -100 520 -100 {
 lab=MUFTA}
-N 510 50 510 60 {
-lab=GND}
 N -1590 -690 -1590 -660 {
 lab=VSS}
 N -1590 -690 -1540 -690 {
 lab=VSS}
+N 440 50 440 80 {
+lab=VSS}
+N 1410 -1010 1410 -970 {
+lab=VSS}
+N 1410 -990 1420 -990 {
+lab=VSS}
+N 1350 -1010 1410 -1010 {
+lab=VSS}
+N 1770 130 1800 130 {
+lab=#net2}
+N 1770 80 1770 170 {
+lab=#net2}
 C {devices/lab_wire.sym} 780 -610 0 0 {name=p2 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 590 -470 0 0 {name=p11 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 70 -450 0 0 {name=p25 sig_type=std_logic lab=VSS}
@@ -868,18 +876,11 @@ C {Tappered-Buffer_1.sym} 1820 -820 0 0 {name=x10}
 C {devices/lab_wire.sym} 2290 -840 2 0 {name=p204 sig_type=std_logic lab=OUT_USB}
 C {devices/lab_wire.sym} -1540 -700 0 0 {name=p111 sig_type=std_logic lab=VSS}
 C {devices/opin.sym} 800 -790 0 0 {name=p117 lab=OUT_CORE}
-C {devices/gnd.sym} 1780 130 1 0 {name=l2 lab=GND}
-C {devices/gnd.sym} 1770 150 1 0 {name=l3 lab=GND}
-C {devices/gnd.sym} 1770 170 1 0 {name=l4 lab=GND}
-C {devices/gnd.sym} 1410 -1010 1 0 {name=l5 lab=GND}
-C {devices/gnd.sym} 1410 -970 1 0 {name=l6 lab=GND}
-C {devices/gnd.sym} 1420 -990 1 0 {name=l8 lab=GND}
 C {devices/lab_wire.sym} 2150 -730 2 0 {name=p36 sig_type=std_logic lab=VSS}
 C {Current_Mirror_Top_s.sym} 100 -850 1 0 {name=x11}
 C {devices/lab_wire.sym} 130 -1020 0 0 {name=p35 sig_type=std_logic lab=ITAIL}
 C {devices/lab_wire.sym} 20 -850 0 0 {name=p120 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 180 -850 2 0 {name=p121 sig_type=std_logic lab=VDD}
-C {devices/gnd.sym} 510 60 0 0 {name=l7 lab=GND}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 520 0 0 0 {name=C3 model=cap_mim_m3_1 W=30 L=30 MF=44 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 340 20 0 0 {name=C4 model=cap_mim_m3_1 W=10 L=10 MF=50 spiceprefix=X}
 C {sky130_fd_pr/res_high_po_0p69.sym} 520 -60 0 0 {name=R1
@@ -887,3 +888,6 @@ L=110
 model=res_high_po_0p69
 spiceprefix=X
 mult=1}
+C {devices/lab_wire.sym} 440 80 0 0 {name=p18 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1350 -1010 0 0 {name=p42 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1770 80 0 0 {name=p82 sig_type=std_logic lab=VSS}
