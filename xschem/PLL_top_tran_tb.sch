@@ -1,5 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -314,10 +313,6 @@ N -1900 -80 -1900 -50 {
 lab=GND}
 N -1900 -170 -1900 -140 {
 lab=VSS}
-N -1820 -160 -1820 -130 {
-lab=VCTRL2}
-N -1820 -70 -1820 -40 {
-lab=VSS}
 N -230 330 -230 360 {
 lab=VCTRL_IN}
 N -230 420 -230 450 {
@@ -386,10 +381,6 @@ N 140 -1130 360 -1130 {
 lab=OUT}
 N 140 -1110 360 -1110 {
 lab=OUTB}
-N -1710 -170 -1710 -140 {
-lab=VDD_TEST}
-N -1710 -80 -1710 -50 {
-lab=GND}
 N 200 -1260 200 -1250 {
 lab=VDD}
 N -360 -1030 -160 -1030 {
@@ -420,8 +411,6 @@ N -610 -910 -160 -910 {
 lab=VCTRL_IN}
 N -660 -890 -160 -890 {
 lab=D7}
-N -710 -870 -160 -870 {
-lab=VCTRL2}
 N -770 -850 -160 -850 {
 lab=S2}
 N -820 -830 -160 -830 {
@@ -433,15 +422,13 @@ lab=D9}
 N -920 -770 -160 -770 {
 lab=S4}
 N -950 -750 -160 -750 {
-lab=#net1}
+lab=VSS}
 N -960 -730 -160 -730 {
 lab=D10}
 N -1010 -710 -160 -710 {
 lab=S5}
 N -1040 -690 -160 -690 {
 lab=S7}
-N -1090 -670 -160 -670 {
-lab=D11}
 N -1480 90 -1480 120 {
 lab=D0}
 N -1480 180 -1480 210 {
@@ -486,10 +473,6 @@ N -1090 -160 -1090 -130 {
 lab=D15}
 N -1090 -70 -1090 -40 {
 lab=GND}
-N 140 -1270 190 -1270 {
-lab=VDD_TEST}
-N 190 -1330 190 -1270 {
-lab=VDD_TEST}
 N -1210 -620 -1210 -590 {
 lab=S7}
 N -1210 -530 -1210 -500 {
@@ -514,16 +497,6 @@ N -1870 300 -1870 330 {
 lab=D10}
 N -1870 390 -1870 420 {
 lab=GND}
-N -1940 300 -1940 330 {
-lab=D11}
-N -1940 390 -1940 420 {
-lab=GND}
-N -1130 350 -1130 380 {
-lab=DIV_OUT2}
-N -1130 440 -1130 470 {
-lab=VSS}
-N -300 -650 -160 -650 {
-lab=DIV_OUT2}
 N 160 -1230 180 -1230 {
 lab=GND}
 N -200 -590 -160 -590 {
@@ -608,8 +581,6 @@ write "TB_TOP_MUX_F7_sch.raw"
 C {devices/vsource.sym} -1900 -110 0 0 {name=V1 value=0}
 C {devices/gnd.sym} -1900 -50 0 0 {name=l1 lab=GND}
 C {devices/lab_wire.sym} -1900 -160 0 0 {name=p1 sig_type=std_logic lab=VSS}
-C {devices/lab_wire.sym} -1820 -150 0 0 {name=p6 sig_type=std_logic lab=VCTRL2}
-C {devices/lab_wire.sym} -1820 -50 0 0 {name=p9 sig_type=std_logic lab=VSS}
 C {devices/vsource.sym} -230 390 0 0 {name=V4 value=0.6}
 C {devices/lab_wire.sym} -230 340 0 0 {name=p3 sig_type=std_logic lab=VCTRL_IN}
 C {devices/lab_wire.sym} -230 440 0 0 {name=p5 sig_type=std_logic lab=VSS}
@@ -658,7 +629,6 @@ C {devices/lab_wire.sym} -310 -1070 0 0 {name=p55 sig_type=std_logic lab=F_IN}
 C {devices/lab_wire.sym} -400 -1010 0 0 {name=p57 sig_type=std_logic lab=ITAIL
 }
 C {devices/lab_wire.sym} -610 -910 0 0 {name=p59 sig_type=std_logic lab=VCTRL_IN}
-C {devices/lab_wire.sym} -710 -870 0 0 {name=p60 sig_type=std_logic lab=VCTRL2}
 C {devices/lab_wire.sym} -470 -970 0 0 {name=p61 sig_type=std_logic lab=S1}
 C {devices/lab_wire.sym} -770 -850 0 0 {name=p62 sig_type=std_logic lab=S2}
 C {devices/lab_wire.sym} -860 -810 0 0 {name=p63 sig_type=std_logic lab=S3}
@@ -669,7 +639,6 @@ C {devices/lab_wire.sym} 170 -1190 2 0 {name=p68 sig_type=std_logic lab=UP_OUT}
 C {devices/lab_wire.sym} 190 -1170 2 0 {name=p69 sig_type=std_logic lab=DN_OUT}
 C {devices/lab_wire.sym} 360 -1130 2 0 {name=p76 sig_type=std_logic lab=OUT}
 C {devices/lab_wire.sym} 360 -1110 2 0 {name=p77 sig_type=std_logic lab=OUTB}
-C {devices/lab_wire.sym} -1710 -160 0 0 {name=p78 sig_type=std_logic lab=VDD_TEST}
 C {devices/lab_wire.sym} -520 -950 0 0 {name=p82 sig_type=std_logic lab=S6}
 C {devices/vsource.sym} -1290 -560 0 0 {name=V16 value=0}
 C {devices/lab_wire.sym} -1290 -610 0 0 {name=p86 sig_type=std_logic lab=S5
@@ -690,7 +659,6 @@ C {devices/lab_wire.sym} -660 -890 0 0 {name=p18 sig_type=std_logic lab=D7}
 C {devices/lab_wire.sym} -820 -830 0 0 {name=p19 sig_type=std_logic lab=D8}
 C {devices/lab_wire.sym} -890 -790 0 0 {name=p20 sig_type=std_logic lab=D9}
 C {devices/lab_wire.sym} -960 -730 0 0 {name=p21 sig_type=std_logic lab=D10}
-C {devices/lab_wire.sym} -1080 -670 0 0 {name=p22 sig_type=std_logic lab=D11}
 C {devices/lab_wire.sym} -180 -1270 0 0 {name=p24 sig_type=std_logic lab=D12}
 C {devices/lab_wire.sym} -270 -1210 0 0 {name=p25 sig_type=std_logic lab=D13}
 C {devices/lab_wire.sym} -260 -1150 0 0 {name=p26 sig_type=std_logic lab=D14}
@@ -708,7 +676,6 @@ C {devices/lab_wire.sym} -870 -150 0 1 {name=p114 sig_type=std_logic lab=D12}
 C {devices/lab_wire.sym} -950 -150 0 1 {name=p116 sig_type=std_logic lab=D13}
 C {devices/lab_wire.sym} -1020 -150 0 1 {name=p118 sig_type=std_logic lab=D14}
 C {devices/lab_wire.sym} -1090 -150 0 1 {name=p120 sig_type=std_logic lab=D15}
-C {devices/lab_wire.sym} 190 -1330 1 0 {name=p23 sig_type=std_logic lab=VDD_TEST}
 C {devices/vsource.sym} -1210 -560 0 0 {name=V2 value=0}
 C {devices/lab_wire.sym} -1210 -610 0 0 {name=p4 sig_type=std_logic lab=S7
 value=3.3}
@@ -722,31 +689,25 @@ C {devices/lab_wire.sym} -1730 310 0 1 {name=p89 sig_type=std_logic lab=D8}
 C {devices/vsource.sym} -1800 360 0 1 {name=V35 value=0}
 C {devices/lab_wire.sym} -1800 310 0 1 {name=p92 sig_type=std_logic lab=D9}
 C {devices/lab_wire.sym} -1870 310 0 1 {name=p94 sig_type=std_logic lab=D10}
-C {devices/vsource.sym} -1940 360 0 1 {name=V37 value=0}
-C {devices/lab_wire.sym} -1940 310 0 1 {name=p96 sig_type=std_logic lab=D11}
-C {devices/vsource.sym} -1130 410 0 0 {name=V24 value="pulse(0 1.8 700n 100p 100p 500n 1000n)"}
-C {devices/lab_wire.sym} -1130 460 0 0 {name=p98 sig_type=std_logic lab=VSS}
-C {devices/lab_wire.sym} -1130 360 0 0 {name=p99 sig_type=std_logic lab=DIV_OUT2}
-C {devices/lab_wire.sym} -300 -650 3 0 {name=p104 sig_type=std_logic lab=DIV_OUT2}
 C {devices/lab_wire.sym} -210 -630 0 0 {name=p105 sig_type=std_logic lab=D17}
 C {devices/lab_wire.sym} -200 -610 0 0 {name=p106 sig_type=std_logic lab=D18}
 C {devices/lab_wire.sym} -200 -590 0 0 {name=p107 sig_type=std_logic lab=D19}
-C {devices/code.sym} -1330 -1740 0 0 {name=TT_MODELS
+C {devices/code.sym} -1320 -1740 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
 value="
 ** opencircuitdesign pdks install
-.lib $::SKYWATER_MODELS/sky130.lib.spice tt
+*.lib $::SKYWATER_MODELS/sky130.lib.spice tt
+*cannot simulate using combined models due to small finger width of m.x1.x8.xm10
+*temporarily switcing to discrete models 
+.lib $::SKYWATER_MODELS/../ngspice/sky130.lib.spice tt
 
 "
 spice_ignore=false}
 C {devices/vsource.sym} -1700 150 0 1 {name=V20 value=0}
 C {devices/vsource.sym} -1840 150 0 1 {name=V22 value=1.8}
-C {devices/vsource.sym} -1820 -100 0 1 {name=V3 value=1.8}
-C {devices/vsource.sym} -1710 -110 0 1 {name=V15 value=1.8}
 C {devices/vsource.sym} -1870 360 0 1 {name=V36 value=1.8}
 C {devices/gnd.sym} -1870 420 0 0 {name=l6 lab=GND}
-C {devices/gnd.sym} -1940 420 0 0 {name=l7 lab=GND}
 C {devices/gnd.sym} -1800 420 0 0 {name=l8 lab=GND}
 C {devices/gnd.sym} -1730 420 0 0 {name=l9 lab=GND}
 C {devices/gnd.sym} -1660 420 0 0 {name=l10 lab=GND}
@@ -761,7 +722,6 @@ C {devices/gnd.sym} -1090 -40 0 0 {name=l19 lab=GND}
 C {devices/gnd.sym} -1020 -40 0 0 {name=l20 lab=GND}
 C {devices/gnd.sym} -950 -40 0 0 {name=l21 lab=GND}
 C {devices/gnd.sym} -870 -40 0 0 {name=l22 lab=GND}
-C {devices/gnd.sym} -1710 -60 0 0 {name=l23 lab=GND}
 C {devices/launcher.sym} 140 90 0 0 {name=h17 
 descr="Load waves" 
 tclcommand="
@@ -795,4 +755,5 @@ C {devices/vsource.sym} -1530 -340 0 1 {name=V32 value=0}
 C {devices/vsource.sym} -1630 150 0 1 {name=V18 value=0}
 C {devices/vsource.sym} -1560 150 0 1 {name=V19 value=1.8}
 C {devices/vsource.sym} -950 -100 0 1 {name=V33 value=1.8}
-C {PLL_TOP7.sym} 0 -860 0 0 {name=x1}
+C {sky130_aa_ip__programmable_pll.sym} 0 -860 0 0 {name=x1}
+C {devices/lab_wire.sym} -940 -750 0 0 {name=p6 sig_type=std_logic lab=VSS}

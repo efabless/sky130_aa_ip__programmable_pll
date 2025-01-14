@@ -1,0 +1,252 @@
+# CACE characterization file 
+
+name: sky130_aa_ip__programmable_pll
+description: Programmable PLL
+PDK: sky130A
+cace_format: 5.2
+
+authorship:
+  designer: Pakistan-Team lead by Hafiz Azeem Abbas
+  company: GSME 
+  creation_date: March 25, 2024
+  license: Apache 2.0
+
+paths:
+  root: ..
+  documentation: docs
+  schematic: xschem
+  magic: mag
+  layout: gds
+  netlist: netlist
+
+pins:
+  dvdd:
+    description: Digital power supply
+    type: power
+    direction: inout
+    Vmin: 1.64
+    Vmax: 1.96
+  dvss:
+    description: Digital ground
+    type: ground
+    direction: inout
+    Vmin: 0
+    Vmax: 0.3
+  avdd:
+    description: Analog power supply
+    type: power
+    direction: inout
+    Vmin: 2.7
+    Vmax: 5.5
+  avss:
+    description: Analog ground
+    type: ground
+    direction: inout
+    Vmin: 0
+    Vmax: 0.3
+
+default_conditions:
+  Vavdd:
+    description: Analog power supply voltage
+    display: avdd
+    unit: V
+    #minimum: 3
+    #typical: 3.3
+    maximum: 5.5
+  Vavss:
+    description: Analog ground
+    display: avss
+    unit: V
+    typical: 0
+  Vdvdd:
+    description: Digital power supply voltage
+    display: dvdd
+    unit: V
+    #minimum: 1.62
+    #typical: 1.8
+    maximum: 1.98
+  Vdvss:
+    description: Digital ground
+    display: dvss
+    unit: V
+    typical: 0
+  temperature:
+    description: Ambient temperature
+    display: Temp
+    unit: °C
+    minimum: -40
+    #typical: 25
+    #maximum: 85
+  corner:
+    description: Process corner
+    display: Corner
+    #enumerate: [ss,tt,ff,sf,fs]
+    #enumerate: [ff,tt]
+    #minimum: sf
+    #typical: tt
+    maximum: ff
+  Tsim:
+    description: transient simulation time
+    display: Tsim
+    unit: mS
+    typical: 75
+  Tstep: 
+    description: transient simulation max time step
+    display: Tstep
+    unit: uS
+    minimum: 0.1
+    #typical: 5
+
+parameters:
+  tran_params:
+     spec:
+       Iavg:
+         description: Average current consumption (analog+digital)
+         display: Power Consumption 
+         unit: uA
+         minimum:
+           value: any
+         typical:
+           value: 3
+         maximum:
+           value: 5
+       Iavg_ss:
+         description: Steady-state average current consumption (analog+digital) measured when reset is not active
+         display: Steady-State Power Consumption
+         unit: uA
+         minimum:
+           value: any
+         typical:
+           value: any
+         maximum:
+           value: 1
+       V_thp:
+         description: Positive trip point of the comparator (point at which reset is released) 
+         display: Output Reset Threshold Voltage
+         unit: V
+         minimum:
+           value: 2.4
+         typical:
+           value: 2.7
+         maximum:
+           value: 3
+       Reset_time:
+         description: Time after V_th for reset to deactivate
+         display: Reset Active Time
+         unit: mS
+         minimum:
+           value: 30
+         typical:
+           value: 50
+         maximum:
+           value: 100
+       Vporb_low:
+         description: Reset Output PORb Voltage (low)
+         display: Vlow_porb
+         unit: V
+         minimum:
+           value: any
+         typical:
+           value: 0.1
+         maximum:
+           value: 0.3
+       Vporb_h_low:
+         description: Reset Output PORb_h Voltage (low)
+         display: Vlow_porb_h
+         unit: V
+         minimum:
+           value: any
+         typical:
+           value: 0.1
+         maximum:
+           value: 0.3
+       Vporb_high_delta:
+         description: Reset Output PORb High Voltage Deviation from Dvdd
+         display: porb_deviation_from_supply
+         unit: V
+         minimum:
+           value: -0.2
+         typical:
+           value: 0
+         maximum:
+           value: any
+       Vporbh_high_delta:
+         description: Reset Output PORb_h High Voltage Deviation from Avdd
+         display: porb_h_deviation_from_supply
+         unit: V
+         minimum:
+           value: -0.2
+         typical:
+           value: 0
+         maximum:
+           value: any
+     #conditions:
+       #avdd_delay:
+         #typical: 3
+       #dvdd_delay:
+         #typical: 10e-6
+       #vbg_delay:
+         #typical: 3
+         ##maximum: 10
+     tool:
+       ngspice:
+         template: tran_sim.sch
+         format: ascii
+         suffix: .data
+         variables: [Iavg,Iavg_ss,V_thp,Reset_time,Vporb_low,Vporb_h_low,Vporb_high_delta,Vporbh_high_delta]
+
+  magic_area:
+    spec:
+      area:
+        display: Area
+        description: Total circuit layout area
+        unit: µm²
+        maximum:
+          value: any
+      width:
+        display: Width
+        description: Total circuit layout width
+        unit: µm
+        maximum:
+          value: any
+      height:
+        display: Height
+        description: Total circuit layout height
+        unit: µm
+        maximum:
+          value: any
+    tool:
+      magic_area
+
+  magic_drc:
+    description: Magic DRC
+    display: Magic DRC
+    spec:
+      drc_errors:
+        maximum:
+          value: 0
+    tool:
+      magic_drc:
+        gds_flatten: true
+
+  netgen_lvs:
+    description: Netgen LVS
+    display: Netgen LVS
+    spec:
+      lvs_errors:
+        maximum:
+          value: 0
+    tool:
+      netgen_lvs:
+        script: run_lvs.tcl
+
+  klayout_drc_full:
+    description: KLayout DRC full
+    display: KLayout DRC full
+    spec:
+      drc_errors:
+        maximum:
+          value: 0
+    tool:
+        klayout_drc:
+            args: ['-rd', 'feol=true', '-rd', 'beol=true', '-rd', 'offgrid=true']

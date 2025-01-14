@@ -1,5 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {type=subcircuit
 format="@name @pinlist @symname"
@@ -28,7 +27,7 @@ T {@symname} -31.5 -6 0 0 0.3 0.3 {}
 T {@name} 135 -52 0 0 0.2 0.2 {}
 T {VDD} 35 -54 0 1 0.2 0.2 {}
 T {VSS} 15 54 2 1 0.2 0.2 {}
-T {FDIV} -125 -14 0 0 0.2 0.2 {}
-T {FIN} -125 6 0 0 0.2 0.2 {}
+T {FDIV} -125 6 0 0 0.2 0.2 {}
+T {FIN} -125 -14 0 0 0.2 0.2 {}
 T {UP} 125 -14 0 1 0.2 0.2 {}
 T {DOWN} 125 6 0 1 0.2 0.2 {}
