@@ -18,8 +18,8 @@ N 2960 -740 2960 -690 {lab=VSS}
 N 2960 -960 2960 -880 {lab=VDD}
 N 2980 -960 2980 -880 {lab=ITAIL_SINK}
 N 3000 -960 3000 -880 {lab=ITAIL_SRC}
-N 2760 -850 2810 -850 {lab=DN}
-N 2760 -830 2810 -830 {lab=UP}
+N 2760 -850 2810 -850 {lab=UP}
+N 2760 -830 2810 -830 {lab=DN}
 N 3020 -1370 3020 -1310 {lab=ITAIL}
 N 3000 -1010 3000 -960 {lab=ITAIL_SRC}
 N 2980 -1010 2980 -960 {lab=ITAIL_SINK}
@@ -507,7 +507,8 @@ N 2830 -1430 2830 -1410 {lab=VSS}
 N 2820 -1600 2820 -1580 {lab=VDD}
 N 2930 -1510 2970 -1510 {lab=DIV_OUT}
 C {VCO_1.sym} 3720 -820 0 0 {name=x7}
-C {CP.sym} 2960 -810 0 0 {name=x8}
+C {CP.sym} 2960 -810 0 0 {name=x8
+schematic=CP_M10_size_up.sch}
 C {Current_Mirror_Top_s.sym} 2990 -1160 1 0 {name=x11}
 C {devices/lab_wire.sym} 3080 -1160 2 0 {name=p121 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3720 -950 2 0 {name=p1 sig_type=std_logic lab=VDD}
@@ -627,14 +628,14 @@ C {devices/lab_wire.sym} 770 -440 0 0 {name=p54 sig_type=std_logic lab=UP_INPUT}
 C {devices/lab_wire.sym} 770 -420 0 0 {name=p55 sig_type=std_logic lab=S2}
 C {devices/lab_wire.sym} 680 -460 0 0 {name=p180 sig_type=std_logic lab=UP1}
 C {devices/lab_wire.sym} 1180 -440 2 0 {name=p160 sig_type=std_logic lab=UP}
-C {devices/lab_wire.sym} 2760 -830 2 0 {name=p13 sig_type=std_logic lab=UP}
+C {devices/lab_wire.sym} 2780 -850 0 0 {name=p13 sig_type=std_logic lab=UP}
 C {devices/lab_wire.sym} 2700 -850 0 1 {name=p23 sig_type=std_logic lab=UP1}
 C {A_MUX.sym} 960 -620 0 0 {name=x9}
 C {devices/lab_wire.sym} 790 -600 0 0 {name=p37 sig_type=std_logic lab=S3}
 C {devices/lab_wire.sym} 780 -620 0 0 {name=p71 sig_type=std_logic lab=DN_INPUT}
 C {devices/lab_wire.sym} 680 -640 0 0 {name=p181 sig_type=std_logic lab=DN1}
 C {devices/lab_wire.sym} 1180 -620 2 0 {name=p49 sig_type=std_logic lab=DN}
-C {devices/lab_wire.sym} 2760 -850 0 0 {name=p27 sig_type=std_logic lab=DN}
+C {devices/lab_wire.sym} 2780 -830 0 0 {name=p27 sig_type=std_logic lab=DN}
 C {devices/lab_wire.sym} 2700 -830 2 0 {name=p28 sig_type=std_logic lab=DN1}
 C {A_MUX.sym} 960 -800 0 0 {name=x10}
 C {devices/lab_wire.sym} 940 -330 0 0 {name=p14 sig_type=std_logic lab=VDD}
